@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Registration Form</title>
+<style>
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f0f8ff;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	max-width: 500px;
+	width: 100%;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	border: 1px solid #ddd;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px 0;
+	color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+	transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus,
+	select:focus {
+	border-color: #4CAF50;
+}
+
+button[type="submit"], button[type="reset"] {
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+	font-size: 16px;
+	width: 48%;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+}
+
+button[type="submit"]:hover {
+	background-color: #45a049;
+	transform: translateY(-2px);
+}
+
+button[type="reset"] {
+	background-color: #f44336;
+	color: white;
+}
+
+button[type="reset"]:hover {
+	background-color: #e53935;
+	transform: translateY(-2px);
+}
+
+.button-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+input[type="radio"] {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.gender-group {
+	display: flex;
+	align-items: center;
+}
+
+.gender-group label {
+	margin-right: 15px;
+	font-weight: normal;
+	color: #555;
+}
+
+td>label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+select {
+	background: #f9f9f9;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<form action="register" method="get">
+			<h1>User Registration Form</h1>
+			<table>
+				<tr>
+					<td><label for="userName">Name</label></td>
+					<td><input type="text" id="userName" name="userName" required></td>
+				</tr>
+				<tr>
+					<td><label for="email">E-Mail</label></td>
+					<td><input type="email" id="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td><label for="mobile">Mobile</label></td>
+					<td><input type="text" id="mobile" name="mobile" required></td>
+				</tr>
+				<tr>
+					<td><label for="dob">Date Of Birth</label></td>
+					<td><input type="date" id="dob" name="dob" required></td>
+				</tr>
+				<tr>
+					<td><label for="city">City</label></td>
+					<td><select id="city" name="city">
+							<option>Select City</option>
+							<option value="Pune">Pune</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Mumbai">Mumbai</option>
+							<option value="Bangalore">Bangalore</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label>Gender</label></td>
+					<td class="gender-group"><input type="radio" id="male"
+						name="gender" value="male"> <label for="male">Male</label>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label></td>
+				</tr>
+				<tr class="button-group">
+					<td colspan="2">
+						<button type="submit">Register</button>
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+</body>
+</html>
