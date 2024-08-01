@@ -39,19 +39,19 @@ public class UserEditForm extends HttpServlet {
                 out.println("<html><head><title>User Edit Form</title>");
                 out.println("<style>");
                 out.println(
-                        "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }");
+                        "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-variant: small-caps; }");
                 out.println(
                         ".container { max-width: 700px; width: 100%; padding: 40px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); border: 1px solid #e0e0e0; animation: fadeIn 1s ease-in-out; }");
                 out.println(
                         "h1 { text-align: center; color: #333; margin-bottom: 30px; font-size: 32px; font-weight: bold; }");
                 out.println(
                         "table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }");
-                out.println("td { padding: 15px; border: 1px solid #e0e0e0; text-align: left; }");
+                out.println("td { padding: 15px; border: 1px solid #e0e0e0; text-align: left; font-variant:small-caps; }");
                 out.println("td:nth-child(even) { background-color: #f7f7f7; }");
                 out.println(
-                        "input[type='text'], input[type='email'], input[type='date'] { width: calc(100% - 22px); padding: 12px; border: 1px solid #ced4da; border-radius: 6px; box-sizing: border-box; font-size: 16px; }");
+                        "input[type='text'], input[type='email'], input[type='date'] { width: calc(100% - 22px); padding: 12px; border: 1px solid #ced4da;font-variant:small-caps; border-radius: 6px; box-sizing: border-box; font-size: 16px; }");
                 out.println(
-                        "input[type='submit'], button { background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.3s; margin-right: 10px; }");
+                        "input[type='submit'], button { background-color: #007bff;font-variant:small-caps; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.3s; margin-right: 10px; }");
                 out.println(
                         "input[type='submit']:hover, button:hover { background-color: #0056b3; }");
                 out.println(
@@ -65,7 +65,7 @@ public class UserEditForm extends HttpServlet {
                 out.println("</style></head><body>");
                 out.println("<div class='container'>");
                 out.println("<h1>Edit User Details</h1>");
-                out.println("<form action='edit?id="+id+"' method='post'>");
+                out.println("<form action='edit?id=" + id + "' method='post'>");
                 out.println("<table>");
                 out.println("<tr>");
                 out.println("<td>Name</td>");
@@ -104,7 +104,7 @@ public class UserEditForm extends HttpServlet {
                 out.println("<html><head><title>No Data Found</title>");
                 out.println("<style>");
                 out.println(
-                        "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }");
+                        "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-variant: small-caps; }");
                 out.println(
                         ".container { max-width: 500px; width: 100%; padding: 30px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); border: 1px solid #e0e0e0; text-align: center; animation: fadeIn 1s ease-in-out; }");
                 out.println("h1 { color: #dc3545; font-size: 24px; font-weight: bold; }");
@@ -121,7 +121,7 @@ public class UserEditForm extends HttpServlet {
             out.println("<html><head><title>Error</title>");
             out.println("<style>");
             out.println(
-                    "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }");
+                    "body { font-family: 'Arial', sans-serif; background-color: #e9ecef; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-variant: small-caps; }");
             out.println(
                     ".container { max-width: 500px; width: 100%; padding: 30px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); border: 1px solid #e0e0e0; text-align: center; animation: fadeIn 1s ease-in-out; }");
             out.println("h1 { color: #dc3545; font-size: 24px; font-weight: bold; }");

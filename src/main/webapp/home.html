@@ -13,6 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	font-variant: small-caps;
 }
 
 .container {
@@ -31,6 +32,7 @@ h1 {
 	margin-bottom: 20px;
 	font-size: 24px;
 	letter-spacing: 1px;
+	font-variant: small-caps;
 }
 
 table {
@@ -41,6 +43,7 @@ table {
 td {
 	padding: 10px 0;
 	color: #555;
+	font-variant: small-caps;
 }
 
 input[type="text"], input[type="email"], input[type="date"], select {
@@ -51,6 +54,7 @@ input[type="text"], input[type="email"], input[type="date"], select {
 	border-radius: 5px;
 	box-sizing: border-box;
 	font-size: 16px;
+	font-variant: small-caps;
 	transition: border-color 0.3s;
 }
 
@@ -66,7 +70,8 @@ button[type="submit"], button[type="reset"] {
 	cursor: pointer;
 	transition: background-color 0.3s, transform 0.3s;
 	font-size: 16px;
-	width: 48%;
+	width: 120px;
+	font-variant: small-caps;
 }
 
 button[type="submit"] {
@@ -103,6 +108,7 @@ input[type="radio"] {
 .gender-group {
 	display: flex;
 	align-items: center;
+	font-variant: small-caps;
 }
 
 .gender-group label {
@@ -119,6 +125,7 @@ td>label {
 
 select {
 	background: #f9f9f9;
+	font-variant: small-caps;
 }
 </style>
 </head>
@@ -157,7 +164,7 @@ select {
 					<td><label>Gender</label></td>
 					<td class="gender-group"><input type="radio" id="male"
 						name="gender" value="Male"> <label for="male">Male</label>
-						<input type="radio" id="Female" name="gender" value="female">
+						<input type="radio" id="female" name="gender" value="Female">
 						<label for="female">Female</label></td>
 				</tr>
 				<tr class="button-group">
